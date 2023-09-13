@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/wallpaper.gif'); /* Путь к анимированному GIF */
+    background-size: cover; /* Заполнение всего экрана */
+    background-repeat: no-repeat; /* Запрет повторения фонового изображения */
+    background-attachment: fixed; /* Фоновое изображение фиксируется на месте при прокрутке */
+    background-position: center center; /* Размещение фонового изображения по центру */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+body::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6); /* Цвет затемнения (черный с прозрачностью 0.5) */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Помещаем затемнение за основное содержимое */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Цвет с прозрачностью 0.8 (здесь 0.8 - это уровень прозрачности, где 1 - полностью непрозрачный) */
+    color: white;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(51, 51, 51, 0.5);
+    border: 1px solid #ccc;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #bb009c;
+    background-color: #bb009c;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #80006a;
+    color: white;
+}
+
+.social-icon {
+    display: inline-block; /* Чтобы изображения были в строку */
+    margin: 0 5px; /* Отступы между изображениями */
+    text-decoration: none; /* Убираем стандартное подчеркивание для ссылок */
+    transition: transform 0.3s; /* Анимация изменения размера при наведении */
+}
+
+.social-icon img {
+    max-width: 100px; /* Максимальная ширина значка (пример: 30 пикселей) */
+    max-height: 100px; /* Максимальная высота значка (пример: 30 пикселей) */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Увеличение размера при наведении на изображение */
+}
