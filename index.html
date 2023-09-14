@@ -14,8 +14,28 @@
                 <li><a href="#bio" onclick="showSection('bio')">Biography</a></li>
                 <li><a href="#portfolio" onclick="showSection('portfolio')">Portfolios</a></li>
                 <li><a href="#contact" onclick="showSection('contact')">Contacts</a></li>
+                <li><a href="#important" onclick="showSection('important')">Sun Zi</a></li>
             </ul>
         </nav>
+        <div>
+            <img src="images/LOGO.png" alt="ERROR" id="interactive-image" height="100" width="50">
+            <map name="image-map">
+                <area shape="rect" coords="0,0,50,50" id="top-area">
+                <area shape="rect" coords="0,50,50,100" id="bottom-area">
+            </map>
+        </div>
+        <script>
+            const topArea = document.getElementById("top-area");
+            const bottomArea = document.getElementById("bottom-area");
+        
+            topArea.addEventListener("click", function () {
+                alert("Тут ничего!");
+            });
+        
+            bottomArea.addEventListener("click", function () {
+                alert("Тут тоже!");
+            });
+        </script>
     </header>
     
     <section id="bio">
@@ -51,12 +71,22 @@
             <li>
                 <a href="https://www.linkedin.com/in/free-tile-15620a291/" class="social-icon" target="_blank"> <img src="images/LinkedIn.png" alt="LinkedIn"></a>
             </li>
+            <li>
+                <a href="https://discordapp.com/users/freetile/" class="social-icon" target="_blank"> <img src="images/discord.png" alt="Discord"></a>
+            </li>
         </ul>
         <p>Email: freetilenew@gmail.com</p>
         <p>Phone: +7 905 572 ** **</p>
     </section>
 
+    <section id="important">
+        <h2>Important!</h2>
+            <blockquote> Appear weak when you are strong, and strong when you are weak. The supreme art of war is to subdue the enemy without fighting. If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat.</blockquote>
+            <pre>Sun Zi: <cite>The Art of war</cite></pre>
+    </section>
+
     <script>
+
         function showSection(sectionId) {
             const sections = document.querySelectorAll('section');
             sections.forEach(section => {
@@ -68,20 +98,6 @@
                 selectedSection.style.display = 'block';
             }
         }
-
-        function showPortfolio(projectId) {
-
-            const projects = document.querySelectorAll('[id^="project"]');
-            projects.forEach(project => {
-                project.style.display = 'none';
-            });
-
-            const selectedProject = document.getElementById(projectId);
-            if (selectedProject) {
-                selectedProject.style.display = 'block';
-            }
-        }
-
         window.onload = function () {
             showSection('bio');
         };
