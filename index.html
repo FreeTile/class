@@ -17,30 +17,25 @@
                 <li><a href="#important" onclick="showSection('important')">Sun Zi</a></li>
             </ul>
         </nav>
-        <div>
             <img src="images/LOGO.png" alt="ERROR" id="interactive-image" height="100" width="50">
             <map name="image-map">
-                <area shape="rect" coords="0,0,50,50" id="top-area">
-                <area shape="rect" coords="0,50,50,100" id="bottom-area">
+                <area shape="rect" coords="0,0,50,50" id="top-area" onclick="TOP()">
+                <area shape="rect" coords="0,50,50,100" id="bottom-area" onclick="BOT()">
             </map>
-        </div>
         <script>
-            const topArea = document.getElementById("top-area");
-            const bottomArea = document.getElementById("bottom-area");
+            function TOP() {
+                alert("There is nothing.");
+            }
         
-            topArea.addEventListener("click", function () {
-                alert("Тут ничего!");
-            });
-        
-            bottomArea.addEventListener("click", function () {
-                alert("Тут тоже!");
-            });
+            function BOT() {
+                alert("There too...");
+            }
         </script>
     </header>
     
     <section id="bio">
         <h2>Biography</h2>
-		<img src="images/Mark.jpg" alt="Not found" width="300" height="300">
+		<img src="images/Mark.jpg" alt="Not Found" width="300" height="300">
         <p>Hi, my name is Mark, I am 20 years old. I like coding and playing video games, more information you can find by pressing button below.</p>
         <nav>
             <ul>
