@@ -17,16 +17,19 @@
                 <li><a href="#important" onclick="showSection('important')">Sun Zi</a></li>
             </ul>
         </nav>
-            <img src="images/LOGO.png" alt="ERROR" id="interactive-image" height="100" width="50">
+        <div style="position: absolute; display: inline-block;" id="interactive-image">
+            <img src="images/LOGO.png" alt="ERROR" id="interactive-image" height="100" width="50" usemap="#image-map">
             <map name="image-map">
                 <area shape="rect" coords="0,0,50,50" id="top-area" onclick="TOP()">
                 <area shape="rect" coords="0,50,50,100" id="bottom-area" onclick="BOT()">
             </map>
+        </div>
         <script>
+            // Оставляем ваши функции без изменений
             function TOP() {
                 alert("There is nothing.");
             }
-        
+
             function BOT() {
                 alert("There too...");
             }
