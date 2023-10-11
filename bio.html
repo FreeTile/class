@@ -4,7 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Karas</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        table {
+        width: 80%;
+        border-collapse: collapse;
+        border: 3px solid rgb(255, 255, 255);
+        margin: 0 auto;
+        text-align: center;
+        }
+    
+        table tr td img {
+            max-width: 35px;
+            max-height: 35px;
+            border-radius: 5px;
+            margin: 1px 1px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    
+        th {
+            background-color: #333; 
+            color: white;
+            padding: 10px;
+            border: 1px solid white; 
+        }
+    
+        td {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: relative; 
+            border: 1px solid white;
+        }
+    
+        div {
+            padding-left: 50px;
+            padding-right: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.767);
+            border-radius: 15px;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,85 +57,92 @@
         </nav>
     </header>
 
-    <section>
+    <div>
         <h1>About me</h1>
-        <p>Since my childhood I have been playing computers games and, sometimes, I was good at it. Years later I decided to be a game developer, I went to the Moscow State University
-            and realize that there only math without coding practice. <br> <hr> <br> After that I spent 2 years learning some program languages and <q>searching</q> for a job, then I decided to went to the Canada to the St. Lawrence College.
-        </p>
-    </section>        
-    <section>
-    <table>
-        <h2>My knowledge</h2>
+    <p>
+        Since my childhood I have been playing computer games and, sometimes, I was good at it. Years later I decided to be a game developer, I went to the Moscow State University
+        and realized that there was only math without coding practice.
+    </p>
+    <br>
+    <hr>
+    <br>
+    <p>
+        After that I spent 2 years learning some programming languages and <q>searching</q> for a job. Then I decided to go to Canada to St. Lawrence College.
+    </p>
+    </div>     
+
+    <div>
+    <h2>My knowledge</h2>
         <pre>The sections about program languages comes from thing that I know very well to thing that I just know a little.</pre>
-        <table border="1">
+        <table >
             <tr>
-                <th>Programs I use</th>
+                <th>Programs I use </th>
                 <th>Programming languages that I know</th>
                 <th>Games I have played</th>
             </tr>
             <tr>
-                <td>Adobe Photoshop</td>
-                <td>Python</td>
-                <td>Dota 2</td>
+                <td>Adobe Photoshop &ensp;<img src="sources/images/PS.png" alt=""></td>
+                <td>Python&ensp;<img src="sources/images/python.png" alt=""></td>
+                <td>Dota 2&ensp;<img src="sources/images/dota.jpg" alt=""></td>
             </tr>
             <tr>
-                <td>Adobe Premiere Pro</td>
-                <td>PHP</td>
-                <td>CS:GO</td>
+                <td>Adobe Premiere Pro&ensp;<img src="sources/images/PP.png" alt=""></td>
+                <td>PHP&ensp;<img src="sources/images/php.png" alt=""></td>
+                <td>CS:GO&ensp;<img src="sources/images/CS_GO.png" alt=""></td>
             </tr>
             <tr>
-                <td>PaintTool SAI</td>
-                <td>MySQL</td>
-                <td>Tes3, Tes4, Tes5</td>
+                <td>PaintTool SAI&ensp;<img src="sources/images/SAI.png" alt=""></td>
+                <td>MySQL&ensp;<img src="sources/images/mysql.png" alt=""></td>
+                <td>Tes3, Tes4, Tes5&ensp;<img src="sources/images/tamriel.png" alt=""></td>
             </tr>
             <tr>
-                <td>Unity3D</td>
-                <td>Java</td>
-                <td>Sekiro: shadows die twice</td>
+                <td>Unity3D&ensp;<img src="sources/images/unity.png" alt=""></td>
+                <td>Java&ensp;<img src="sources/images/java.png" alt=""></td>
+                <td>Sekiro: shadows die twice&ensp;<img src="sources/images/sekiro.jpg" alt=""></td>
             </tr>
             <tr>
-                <td>Visual Studio</td>
-                <td>Html</td>
-                <td>Elden Ring</td>
+                <td>Visual Studio&ensp;<img src="sources/images/VS.png" alt=""></td>
+                <td>Html&ensp;<img src="sources/images/html.png" alt=""></td>
+                <td>Elden Ring&ensp;<img src="sources/images/EldenRing.jpg" alt=""></td>
             </tr>
             <tr>
-                <td>Blender</td>
-                <td>Css</td>
-                <td>Ultrakill</td>
+                <td>Blender&ensp;<img src="sources/images/Blender.png" alt=""></td>
+                <td>Css&ensp;<img src="sources/images/Css.png" alt=""></td>
+                <td>Ultrakill&ensp;<img src="sources/images/Ultrakill.jpg" alt=""></td>
             </tr>
             <tr>
-                <td>WireShark</td>
-                <td>JS</td>
-                <td>Metal Gear Rising: Revengeance</td>
+                <td>WireShark&ensp;<img src="sources/images/Wireshark.png" alt=""></td>
+                <td>JS&ensp;<img src="sources/images/JS.png" alt=""></td>
+                <td>Metal Gear Rising: Revengeance&ensp;<img src="sources/images/MGR.jpg" alt=""></td>
             </tr>
             <tr>
-                <td>CheatEngine</td>
-                <td>C#</td>
-                <td>Dark souls 1,2,3</td>
+                <td>CheatEngine&ensp;<img src="sources/images/CheatEngine.png" alt=""></td>
+                <td>C#&ensp;<img src="sources/images/C#.png" alt=""></td>
+                <td>Dark souls 1,2,3&ensp;<img src="sources/images/dark_souls.jpeg" alt=""></td>
             </tr>
             <tr>
-                <td>UnrealEngine</td>
-                <td>C</td>
-                <td>Osu!</td>
+                <td>UnrealEngine&ensp;<img src="sources/images/UE.png" alt=""></td>
+                <td>C&ensp;<img src="sources/images/C.png" alt=""></td>
+                <td>Osu!&ensp;<img src="sources/images/osu.png" alt=""></td>
             </tr>
             <tr>
-                <td>ZBrush</td>
-                <td>C++</td>
-                <td>Tekken 5, 7</td>
+                <td>ZBrush&ensp;<img src="sources/images/Zbrush.png" alt=""></td>
+                <td>C++&ensp;<img src="sources/images/C++.png" alt=""></td>
+                <td>Tekken 5, 7&ensp;<img src="sources/images/Tekken.jpg" alt=""></td>
             </tr>
             <tr>
                 <td colspan="3" style="text-align: center;">And a lot more but it will take up too much space</td>
             </tr>
         </table>
-    </section>
+    </div>
 
-    <section>
-        <h2>Test section for ol</h2>
+    <div>
+        <h2>Test section for ol and ul</h2>
         <ol>
             <li>Option_1</li>
             <li>Option_2</li>
         </ol>
-    </section>
+    </div>
 
       
 </body>

@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Karas</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .social-icon {
+        display: inline-block;
+        margin: 0 5px;
+        text-decoration: none;
+        transition: transform 0.3s;
+        }
+    
+        .social-icon img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,11 +34,11 @@
                 <li><a href="#important" onclick="showSection('important')">Sun Zi</a></li>
             </ul>
         </nav>
-        <div style="position: absolute; display: inline-block;" id="interactive-image">
-            <img src="images/LOGO.png" alt="ERROR" id="interactive-image" height="100" width="50" usemap="#image-map">
+        <div style="position: absolute;" id="interactive-image">
+            <img src="sources/images/LOGO.png" alt="ERROR" height="100" width="50" usemap="#image-map">
             <map name="image-map">
-                <area shape="rect" coords="0,0,50,50" id="top-area" onclick="TOP()">
-                <area shape="rect" coords="0,50,50,100" id="bottom-area" onclick="BOT()">
+                <area shape="rect" coords="0,0,50,50"  onclick="TOP()">
+                <area shape="rect" coords="0,50,50,100"  onclick="BOT()">
             </map>
         </div>
         <script>
@@ -37,7 +54,8 @@
     
     <section id="bio">
         <h2>Biography</h2>
-		<img src="images/Mark.jpg" alt="Not Found" width="300" height="300">
+        
+		<img src="sources/images/Mark.jpg" alt="Not Found" width="300" height="300" style="border-radius: 15px;"> <!-- Inline CSS -->
         <p>Hi, my name is Mark, I am 20 years old. I like coding and playing video games, more information you can find by pressing button below.</p>
         <nav>
             <ul>
@@ -51,7 +69,7 @@
         <h3>Examples of my works</h3>
         <ul>
             <li>
-                <a href="https://github.com/FreeTile" class="social-icon" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                <a href="https://github.com/FreeTile" class="social-icon" target="_blank"><img src="sources/images/github.png" alt="GitHub"></a>
             </li>
         </ul>
     </section>
@@ -60,16 +78,16 @@
         <h2>Contacts</h2>
         <ul class="contact-list">
             <li>
-				<a href="https://vk.com/freetile" class="social-icon" target="_blank"><img src="images/VK.png" alt="VK"></a>
+				<a href="https://vk.com/freetile" class="social-icon" target="_blank"><img src="sources/images/VK.png" alt="VK"></a>
             </li>
             <li>
-                <a href="https://t.me/JoJobBizzareAdventure" class="social-icon" target="_blank"> <img src="images/telegram.png" alt="Telegram"></a>
+                <a href="https://t.me/JoJobBizzareAdventure" class="social-icon" target="_blank"> <img src="sources/images/telegram.png" alt="Telegram"></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/free-tile-15620a291/" class="social-icon" target="_blank"> <img src="images/LinkedIn.png" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/free-tile-15620a291/" class="social-icon" target="_blank"> <img src="sources/images/LinkedIn.png" alt="LinkedIn"></a>
             </li>
             <li>
-                <a href="https://discordapp.com/users/freetile/" class="social-icon" target="_blank"> <img src="images/discord.png" alt="Discord"></a>
+                <a href="https://discordapp.com/users/freetile/" class="social-icon" target="_blank"> <img src="sources/images/discord.png" alt="Discord"></a>
             </li>
         </ul>
         <p>Email: freetilenew@gmail.com</p>
